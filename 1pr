@@ -1,0 +1,9 @@
+def hashcode(a):
+    hastable = [[],[],[],[],[]]
+    for i in a:
+        b = ord(i)%5
+        hastable[b].append((ord(i),i))
+    return hastable
+a = 'abcde'
+hastable = hashcode(a)
+print(hastable)
